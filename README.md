@@ -5,9 +5,9 @@ This is a collection of simple bash scripts to aid in the process of setting up 
 
 There are three functions in this collection: 
 
-`$ mkproj`
-`$ mkvenv`
-`$ mkrepo`
+`$ mkproj`  
+`$ mkvenv`  
+`$ mkrepo`  
 
 
 
