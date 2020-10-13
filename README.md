@@ -12,9 +12,9 @@ The family consists of three callable functions:
   
   
 `$ mkproj` itself is the parent function, which relies on its two child functions, `$ mkvenv` and `$ mkrepo`, to operate.
-
-
-
+  
+  
+  
   
   
 ## `$ mkproj` Overview
