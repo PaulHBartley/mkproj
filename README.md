@@ -9,7 +9,7 @@ There are three functions in this collection:
 `$ mkvenv`  
 `$ mkrepo`  
 
-
+`$ mkproj` itself is a parent function that depends on its two child functions to operate
 
 
 
@@ -17,7 +17,7 @@ for speeding up the process of setting up for a new project.
 In its current form, **mkproj** has a Python-centric 
   
   
-  
+## `$ mkproj` Overview
 This function consolidates the process of setting up a Python project
 folder into one command with three yes/no prompts.
 
