@@ -17,6 +17,14 @@ The family consists of three callable functions:
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
 ## `$ mkproj` Overview
 This function consolidates the process of setting up a Python project
 folder into one command with three yes/no prompts.
