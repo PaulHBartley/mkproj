@@ -9,12 +9,11 @@ The family consists of three callable functions:
 `$ mkvenv`  
 `$ mkrepo`  
 
-`$ mkproj` 
+
+`$ mkproj` itself is the parent function, which relies on its two child functions, `$ mkvenv` and `$ mkrepo`, to operate.
 
 
 
-for speeding up the process of setting up for a new project.
-In its current form, **mkproj** has a Python-centric 
   
   
 ## `$ mkproj` Overview
