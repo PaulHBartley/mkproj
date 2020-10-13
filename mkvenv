@@ -1,0 +1,73 @@
+#!/usr/bin/bash
+
+function mkvenv() {
+
+#################################################################################################
+# OVERVIEW
+# This function calls the "$ python venv" module to create a Python virtual environment, and it
+# gives the option to activate the environment directly after the environment is created.
+#
+# OPERATION
+# "$ mkvenv -a <directory>" installs a .venv folder inside <directory> and calls "$ source" to
+# run a script named "activate" inside the .venv folder. Running the "activate" script transforms
+# <directory> into the active Python virtual environment for that shell session. The "activate"
+# script places "(<directory>) $ " to the left of the command line prompt (as shown), signaling
+# that all Python calls made when <directory> is active will be routed to the Python interpreter
+# in /<path>/<directory>/.venv. To return the Python environment to the system-wide Python
+# install, type "$ deactivate".
+#
+# "$ mkvenv <directory>" simply installs a .venv folder inside <directory> without activating
+# <directory> as the Python virtual environment.
+#
+# For the script to work, python3.8 (or later) and the venv module need to be installed.
+#
+# DIRECTORY BEHAVIOR
+# "$ mkvenv [-a] <directory>" -- makes <directory> (new or existing) a Python environment folder
+# within the current working directory.
+# "$ mkvenv [-a] <path>/<directory>" -- makes <directory> (new or existing) a Python environment
+# folder inside the path destination directory.
+# "$ mkvenv [-a]" -- makes the current working directory into a Python environment folder.
+#
+#################################################################################################
+
+	i=0
+	for arg in $1
+	do let i=i+1
+	done
+
+	j=0
+    	for arg in $2
+	do let j=j+1
+    	done
+
+	if [[ $# == 1 ]] && [[ $1 != -a ]] && [[ $i == 1 ]]; then
+        	python3.8 -m venv --prompt `basename $1` `dirname $1`/`basename $1`/.venv
+
+	elif [[ $# == 2 ]] && [[ $1 == -a ]] && [[ $j == 1 ]]; then
+		python3.8 -m venv --prompt `basename $2` `dirname $2`/`basename $2`/.venv && source `dirname $2`/`basename $2`/.venv/bin/activate
+
+	elif [[ $# == 1 ]] && [[ $1 != -a ]] && [[ $i > 1 ]]; then
+		python3.8 -m venv --prompt "$(echo "$*" | sed -e 's/ /-/g')" "$(echo "$*" | sed -e 's/ /-/g')"/.venv
+
+	elif [[ $# == 2 ]] && [[ $1 == -a ]] && [[ $j > 1 ]]; then
+		python3.8 -m venv --prompt "$(echo "${*:2:$j}" | sed -e 's/ /-/g')" "$(echo "${*:2:$j}" | sed -e 's/ /-/g')"/.venv && source "$(echo "${*:2:$j}" | sed -e 's/ /-/g')"/.venv/bin/activate
+
+	elif [[ $# > 1 ]] && [[ $1 != -a ]] && [[ $i == 1 ]]; then
+		python3.8 -m venv --prompt "$(echo "$*" | sed -e 's/ /-/g')" "$(echo "$*" | sed -e 's/ /-/g')"/.venv
+
+	elif [[ $# > 1 ]] && [[ $1 == -a ]] && [[ $j == 1 ]]; then
+		python3.8 -m venv --prompt "$(echo "${*:2:$#}" | sed -e 's/ /-/g')"  "$(echo "${*:2:$#}" | sed -e 's/ /-/g')"/.venv && source "$(echo "${*:2:$#}" | sed -e 's/ /-/g')"/.venv/bin/activate
+
+	elif [[ $# == 0 ]] && [[ $i == 0 ]] && [[ $j == 0 ]]; then
+		python3.8 -m venv --prompt `basename $PWD` `dirname $PWD`/`basename $PWD`/.venv
+
+	elif [[ $# == 1 ]] && [[ $1 == -a ]] && [[ $i == 1 ]] && [[ $j == 0 ]]; then
+		python3.8 -m venv --prompt `basename $PWD` `dirname $PWD`/`basename $PWD`/.venv && source `dirname $PWD`/`basename $PWD`/.venv/bin/activate
+
+	else
+		echo "The command could not operate on the given directory name. Please try again."
+		exit 2
+
+	fi
+
+}

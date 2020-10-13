@@ -1,0 +1,134 @@
+#!/usr/bin/bash
+
+function mkrepo() {
+
+####################################################################################################
+# OVERVIEW
+# This function wraps "$ git init <directory>" with a script giving the option to automatically
+# connect <directory> with a remote repository on GitHub.
+#
+# OPERATION
+# "$ mkrepo -r <directory>" sends a call to the GitHub API to create a new remote repository (called
+# <directory>) from a pre-defined template. The script then git-initializes a new or existing local
+# <directory> and links it with its remote counterpart.
+#
+# "$ mkrepo <directory>" simply initializes <directory> (new or existing) as a local git repository
+# without connecting to the GitHub API.
+#
+# For the script to work, git needs to be installed, and the following variables need to be set in
+# the active shell environment.
+#
+# GITHUB_USERNAME
+# GITHUB_TOKEN
+# GITHUB_TEMPLATE_REPO
+#
+# DIRECTORY BEHAVIOR
+# "$ mkrepo [-r] <directory>" -- makes <directory> (new or existing) a git repository inside the
+# current working directory.
+# "$ mkrepo [-r] <path>/<directory>" -- makes <directory> (new or existing) a git repository inside
+# the path destination directory.
+# "$ mkrepo [-r]" -- makes the current working directory into a git repository.
+#
+###################################################################################################
+
+	i=0
+	for arg in $1
+	do let i=i+1
+	done
+
+	j=0
+    	for arg in $2
+	do let j=j+1
+    	done
+
+	if [[ $# == 1 ]] && [[ $1 != -r ]] && [[ $i == 1 ]]; then
+		git init `dirname $1`/`basename $1`
+
+	elif [[ $# == 2 ]] && [[ $1 == -r ]] && [[ $j == 1 ]]; then
+		curl -s \
+        		-i -u ${GITHUB_USERNAME}:${GITHUB_TOKEN} https://api.github.com/user \
+        		-X POST \
+        		-H 'Accept: application/vnd.github.baptiste-preview+json' \
+        		"https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_TEMPLATE_REPO}/generate" \
+        		-d '{"name": "'"$(basename "$(echo "$2" | sed -e 's/ /-/g')")"'", "description": "New repo"}' &&
+
+		git init $(dirname "$2")/$(basename "$(echo "$2" | sed -e 's/ /-/g')") &&
+		cd $(dirname "$2")/$(basename "$(echo "$2" | sed -e 's/ /-/g')") &&
+
+        	git remote add origin "https://github.com/${GITHUB_USERNAME}/$(basename "$(echo "$2" | sed -e 's/ /-/g')")" &&
+        	git remote -v &&
+		sleep 2 &&
+
+        	git pull origin main &&
+		cd $(dirname "$PWD")
+
+	elif [[ $# == 1 ]] && [[ $1 != -r ]] && [[ $i > 1 ]]; then
+		git init $(dirname "$*")/$(basename "$(echo "$*" | sed -e 's/ /-/g')")
+
+	elif [[ $# == 2 ]] && [[ $1 == -r ]] && [[ $j > 1 ]]; then
+		curl -s \
+                        -i -u ${GITHUB_USERNAME}:${GITHUB_TOKEN} https://api.github.com/user \
+                        -X POST \
+                        -H 'Accept: application/vnd.github.baptiste-preview+json' \
+                        "https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_TEMPLATE_REPO}/generate" \
+                        -d '{"name": "'"$(basename "$(echo "${*:2:$j}" | sed -e 's/ /-/g')")"'", "description": "New repo"}' &&
+
+
+		git init $(dirname "$2")/$(basename "$(echo "${*:2:$j}" | sed -e 's/ /-/g')") &&
+		cd $(dirname "$2")/$(basename "$(echo "${*:2:$j}" | sed -e 's/ /-/g')") &&
+
+                git remote add origin "https://github.com/${GITHUB_USERNAME}/$(basename "$(echo "${*:2:$j}" | sed -e 's/ /-/g')")" &&
+                git remote -v &&
+                sleep 2 &&
+
+		git pull origin main &&
+                cd $(dirname "$PWD")
+
+	elif [[ $# > 1 ]] && [[ $1 != -r ]] && [[ $i == 1 ]]; then
+		git init $(dirname "$*")/$(basename "$(echo "$*" | sed -e 's/ /-/g')")
+
+	elif [[ $# > 1 ]] && [[ $1 == -r ]] && [[ $j == 1 ]]; then
+		curl -s \
+                        -i -u ${GITHUB_USERNAME}:${GITHUB_TOKEN} https://api.github.com/user \
+                        -X POST \
+                        -H 'Accept: application/vnd.github.baptiste-preview+json' \
+                        "https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_TEMPLATE_REPO}/generate" \
+                        -d '{"name": "'"$(basename "$(echo "${*:2:$#}" | sed -e 's/ /-/g')")"'", "description": "New repo"}' &&
+
+
+                git init $(dirname "$2")/$(basename "$(echo "${*:2:$#}" | sed -e 's/ /-/g')") &&
+                cd $(dirname "$2")/$(basename "$(echo "${*:2:$#}" | sed -e 's/ /-/g')") &&
+
+                git remote add origin "https://github.com/${GITHUB_USERNAME}/$(basename "$(echo "${*:2:$#}" | sed -e 's/ /-/g')")" &&
+                git remote -v &&
+                sleep 2 &&
+
+                git pull origin main &&
+                cd $(dirname "$PWD")
+
+	elif [[ $# == 0 ]] && [[ $i == 0 ]] && [[ $j == 0 ]]; then
+		git init "$PWD"
+
+	elif [[ $# == 1 ]] && [[ $1 == -r ]] && [[ $i == 1 ]] && [[ $j == 0 ]]; then
+		curl -s \
+                        -i -u ${GITHUB_USERNAME}:${GITHUB_TOKEN} https://api.github.com/user \
+                        -X POST \
+                        -H 'Accept: application/vnd.github.baptiste-preview+json' \
+                        "https://api.github.com/repos/${GITHUB_USERNAME}/${GITHUB_TEMPLATE_REPO}/generate" \
+                        -d '{"name": "'"$(basename "$(echo "$PWD")")"'", "description": "New repo"}' &&
+
+		git init "$PWD" &&
+
+                git remote add origin "https://github.com/${GITHUB_USERNAME}/$(basename "$(echo "$PWD")")" &&
+                git remote -v &&
+                sleep 2 &&
+
+                git pull origin main
+
+	else
+		echo "The command could not operate on the given directory name. Please try again."
+		exit 2
+
+	fi
+
+}

@@ -1,0 +1,110 @@
+#!/usr/bin/bash
+
+function mkproj() {
+
+###########################################################################
+# OVERVIEW
+# This function consolidates the process of setting up a Python project
+# folder into one command with three yes/no prompts.
+#
+# OPERATION
+# "$ mkproj <directory>" takes an as-to-be-created or existing <directory>
+# and calls the "$ mkvenv" and "$ mkrepo" functions, which take care of
+# setting up <directory> as a Python project.
+#
+# "$ mkproj <directory>"
+# 1. Prepare <directory> as a Python virtual environment.
+# A) Activate <directory> as a Python virtual environment? y/n
+# B) Initialize <directory> as a git repository? y/n
+# C) Create a remote repository for <directory> on GitHub? y/n
+#
+# DIRECTORY BEHAVIOR
+# "$ mkproj <directory>" -- makes <directory> (new or existing) a Python
+# project folder within the current working directory.
+# "$ mkproj <path>/<directory>" -- makes <directory> (new or existing) a
+# Python project folder inside the path destination directory.
+# "$ mkproj" -- makes the current working directory into a Python project
+# folder.
+###########################################################################
+
+BLUE='\033[01;34m'
+NC='\033[0m'
+
+while true; do
+	if [[ -n $@ ]]; then
+	echo -ne "Activate ${BLUE}$*${NC} as a Python virtual environment?  y/n "; read -p "" venv_yn
+	fi
+	WD="F"
+	if [[ -z $@ ]]; then
+	echo -ne "Activate ${BLUE}$(basename $(echo "$PWD"))${NC} as a Python virtual environment?  y/n "; read -p "" venv_yn
+	WD="T"
+	fi
+        if [[ -n $venv_yn ]] && [[ $venv_yn == "y" || $venv_yn == "Y" ]] && [[ $WD == "F" ]]; then
+		set -a
+		mkvenv -a $@ && echo -e "Activated ${BLUE}$*${NC} as a Python virtual enviornment."
+		break
+
+	elif [[ -n $venv_yn ]] && [[ $venv_yn == "y" || $venv_yn == "Y" ]] && [[ $WD == "T" ]]; then
+		set -a
+                mkvenv -a $@ && echo -e "Activated ${BLUE}$(basename $(echo "$PWD"))${NC} as a Python virtual enviornment."
+		break
+
+	elif [[ -n $venv_yn ]] && [[ $venv_yn == "n" || $venv_yn == "N" ]] && [[ $WD == "F" ]]; then
+		mkvenv $@ &&
+		break
+
+	elif [[ -n $venv_yn ]] && [[ $venv_yn == "n" || $venv_yn == "N" ]] && [[ $WD == "T" ]]; then
+		mkvenv $@ &&
+		break
+
+	else
+		echo "Please answer y/n."
+	fi
+done
+
+while true; do
+	if [[ -n $@ ]] && [[ $WD == "F" ]] && [[ $else_loop != "T" ]]; then
+	echo -ne "Initialize ${BLUE}$*${NC} as a local git repository?  y/n "; read -p "" gitrepo_yn
+	fi
+	if [[ -z $@ ]] && [[ $WD == "T" ]] && [[ $else_loop != "T" ]]; then
+	echo -ne "Initialize ${BLUE}$(basename $(echo "$PWD"))${NC} as a local git repository?  y/n "; read -p "" gitrepo_yn
+	fi
+	if [[ -n $gitrepo_yn ]] && [[ $gitrepo_yn == "y" || $gitrepo_yn == "Y" ]]; then
+		if [[ -n $@ ]] && [[ $WD == "F" ]]; then
+		echo -ne "Set up ${BLUE}$*${NC} as a remote repository on GitHub? y/n "; read -p "" githubrepo_yn
+			if [[ -n $githubrepo_yn ]] && [[ $githubrepo_yn == "y" || $githubrepo_yn == "Y" ]]; then
+                        	mkrepo -r $* &&
+                        	break
+			elif [[ -n $githubrepo_yn ]] && [[ $githubrepo_yn == "n" || $githubrepo_yn == "N" ]]; then
+                                mkrepo $* &&
+                                break
+			else
+				echo "Please answer y/n."
+				else_loop="T"
+			fi
+
+		elif [[ -z $@ ]] && [[ $WD == "T" ]]; then
+		echo -ne "Set up ${BLUE}$(basename $(echo "$PWD"))${NC} as a remote repository on GitHub? y/n "; read -p "" githubrepo_yn
+			if [[ -n $githubrepo_yn ]] && [[ $githubrepo_yn == "y" || $githubrepo_yn == "Y" ]]; then
+                                mkrepo -r $* &&
+                                break
+                	elif [[ -n $githubrepo_yn ]] && [[ $githubrepo_yn == "n" || $githubrepo_yn == "N" ]]; then
+                        	mkrepo $* &&
+                        	break
+			else
+				echo "Please answer y/n."
+				else_loop="T"
+			fi
+		else
+			echo "Please answer y/n."
+		fi
+
+	elif [[ -n $gitrepo_yn ]] && [[ $gitrepo_yn == "n" || $gitrepo_yn == "N" ]]; then
+            	break
+
+	else
+		echo "Please answer y/n."
+	fi
+done
+
+}
