@@ -1,9 +1,9 @@
 
 # mkproj
 
-This is a collection of simple bash scripts to aid in the process of setting up a Python project.
+This is a family of simple bash scripts to aid in the process of setting up a Python project.
 
-There are three functions in this collection: 
+The collection is made of three functions:
 
 `$ mkproj`  
 `$ mkvenv`  
