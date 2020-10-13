@@ -3,7 +3,11 @@
 
 This is a collection of simple bash scripts to aid in the process of setting up a Python project.
 
-There is the parent function (**mkproj**) and two helper functions (**mkvenv** and **mkrepo**). 
+There are three functions in this collection: 
+
+`$ mkproj`
+`$ mkvenv`
+`$ mkrepo`
 
 
 
@@ -18,7 +22,7 @@ This function consolidates the process of setting up a Python project
 folder into one command with three yes/no prompts.
 
 # OPERATION
-"$ mkproj <directory>" takes an as-to-be-created or existing <directory>
+$ mkproj directory takes an as-to-be-created or existing <directory>
 and calls the "$ mkvenv" and "$ mkrepo" functions, which take care of
 setting up <directory> as a Python project.
 
