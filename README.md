@@ -8,13 +8,13 @@ The family consists of three callable functions:
 `$ mkproj`  <-- the parent  
 `$ mkvenv`  <-- child #1  
 `$ mkrepo`  <-- child #2  
-  
-  
-  
+ <br>  
+ <br>  
+ <br>  
 `$ mkproj` itself is the parent function, which relies on its two child functions, `$ mkvenv` and `$ mkrepo`, to operate.
-  
-  
-  
+ <br>  
+ <br>  
+ <br>  
   
   
   
