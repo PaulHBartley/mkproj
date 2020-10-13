@@ -1,5 +1,10 @@
 
-# OVERVIEW
+# mkproj
+
+This repository contains a collection of simple bash utilities for automating parts of the process in setting up a new Python project.  
+
+
+
 This function consolidates the process of setting up a Python project
 folder into one command with three yes/no prompts.
 
