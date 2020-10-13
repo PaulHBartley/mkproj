@@ -3,12 +3,13 @@
 
 This is a collection of simple bash scripts to aid in the process of setting up a Python project.
 
+There is the parent function (**mkproj**) and two helper functions (**mkvenv** and **mkrepo**). 
 
 
 
 
 
- parent function (**mkproj**) and two helper functions (**mkvenv** and **mkrepo**)  for speeding up the process of setting up for a new project.
+for speeding up the process of setting up for a new project.
 In its current form, **mkproj** has a Python-centric 
   
   
