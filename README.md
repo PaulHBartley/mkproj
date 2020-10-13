@@ -3,13 +3,13 @@
 
 This is a family of simple bash scripts to aid in the process of setting up a Python project.
 
-The collection is made of three functions:
+The family consists of three callable functions:
 
 `$ mkproj`  
 `$ mkvenv`  
 `$ mkrepo`  
 
-`$ mkproj` itself is a parent function that depends on its two child functions to operate
+`$ mkproj` 
 
 
 
