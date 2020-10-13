@@ -5,9 +5,9 @@ This is a family of simple bash scripts to aid in the process of setting up a Py
 
 The family consists of three callable functions:
 
-`$ mkproj`  <-- the parent
-`$ mkvenv`  <-- child #1
-`$ mkrepo`  <-- child #2
+`$ mkproj`  <-- the parent  
+`$ mkvenv`  <-- child #1  
+`$ mkrepo`  <-- child #2  
 
 
 `$ mkproj` itself is the parent function, which relies on its two child functions, `$ mkvenv` and `$ mkrepo`, to operate.
