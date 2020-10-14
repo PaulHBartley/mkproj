@@ -10,10 +10,9 @@ The family consists of three callable functions:
 `$ mkrepo`  <-- child #2  
  <br>  
 `$ mkproj` relies on its two child functions to operate. 
-However, `$ mkvenv` and `$ mkrepo` can run on their own. This could be useful if we only need one of the functions for certain tasks.  
+However, `$ mkvenv` and `$ mkrepo` can do things on their own. How convenient.
  <br>  
-So what do they do?  
-Let's look at an example.
+Let's look at an example of 
 
 
  <br>  
