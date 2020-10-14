@@ -50,7 +50,7 @@ When `$ mkproj my-new-python-project` finishes, we will have
    - a remote repository on GitHub ""
    - a pack of preset items for our project ""  
    
-### For information about how to install `$ mkproj`, `$ mkvenv', and `$ mkrepo`:  
+### For information about how to install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`:  
 Please see the INSTALL.md.
 
 
