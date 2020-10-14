@@ -4,8 +4,8 @@
 
 ## Compatibility
 
-**mkproj** is a collection of three bash scripts been tested in GNU bash, version 5.0.17 on Ubuntu 20.04.
-There
+Thus far, **mkproj** has been tested in *GNU bash, version 5.0.17* on *Ubuntu 20.04*.
+
 
 
 ## Files to be installed  
