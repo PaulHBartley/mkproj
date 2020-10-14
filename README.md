@@ -47,7 +47,7 @@ When `$ mkproj my-new-python-project` finishes, we will have
 - a local folder called `my-new-python-project` with
    - an activated Python virtual environment (if we so choose)
    - an initalized git repository ""
-   - a connected remote repository on GitHub ""
-   - a starter kit of preset items for our project ""
+   - a remote repository on GitHub ""
+   - a set of preset items for our project ""
 
 
