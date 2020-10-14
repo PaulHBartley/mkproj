@@ -22,8 +22,8 @@ What do we need for this folder?
 - A git repository initialized inside the folder, ready to keep an eye on things.
 - A remote git repository paired with the local repository inside the folder, for keepsake and collaboration.
   
-Having these three components in place would be a good starting point for a Python project folder.
-But what would be even better is if we could give our folder the extra props it needs to be on the up and up.
+Having these three components in place would be a good starting point for a Python project.
+But what would be even better is if we could give our folder the extra props to be just what we needed.
 
 
 
