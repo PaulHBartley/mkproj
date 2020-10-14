@@ -4,8 +4,8 @@
 
 ## Compatibility
 
-Tested on **Ubuntu 20.04** in **GNU bash, version 5.0.17**.
-The scripts should work in other bash 5.0+ environments (assuming Python 3.5+ is installed).
+The scripts have been tested on **Ubuntu 20.04** in **GNU bash, version 5.0.17**.
+They should work in other bash 5.0+ environments (assuming Python 3.5+ is installed).
 
 ## Files to be installed  
 `$ mkproj` <-- parent function  
