@@ -33,13 +33,14 @@ This is a good start. But we can do more.
 
 With `$ mkproj my-new-python-project` we can also
   
-- activate `my-new-python-project` as the Python virtual environment in effect for that shell session.
-- use a [GitHub Template Repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-template-repository) to automatically populate the `my-new-python-project` GitHub repository and the local directory with any number of useful items:  
+- set `my-new-python-project` as the active Python virtual environment for that shell session.
+- use a [GitHub Template Repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-template-repository) to automatically populate the `my-new-python-project` GitHub repository with any number of useful items:  
    - .gitignore  
    - README.md  
    - LICENSE  
    - Install.md
-
+   - whatever else!
+- sync the local `my-new-python-project` directory with the items  
 
 
 
