@@ -1,6 +1,6 @@
 # Installing mkproj  
 
-**mkproj** is a family of bash functions installed as three executable files.
+**mkproj** is a family of three bash functions installed as three executable files.
 
 ## Files to be installed  
 `$ mkproj` <-- parent function  
