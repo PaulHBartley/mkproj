@@ -22,9 +22,9 @@ What do we need for this folder?
 Fine.
 
 We will call `$mkproj <folder>` to
-- Install a Python virtual environment inside the folder.
-- Initialize the folder as a git repository.
-- Connect the git repository with a remote repository.
+- install a Python virtual environment inside the folder.
+- initialize the folder as a git repository.
+- connect the folder's git repository with a remote repository.
   
 Having these three components in place would be a good starting point for a Python project.
 But it would be even better if we could 
