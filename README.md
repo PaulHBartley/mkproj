@@ -19,7 +19,7 @@ What does this folder need?
 <br>
   
   
-- A Python virtual environment installed inside the folder
+- A Python virtual environment
 - A git repository
 - A remote git repository paired with the local repository
   
