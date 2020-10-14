@@ -40,7 +40,7 @@ With `$ mkproj my-new-python-project` we can also
    - LICENSE  
    - Install.md
    - whatever else!
-- sync the local `my-new-python-project` repository with its remote counterpart on GitHub, thus making the items automatically appear in our local project folder.
+- sync the local `my-new-python-project` repo with its remote counterpart on GitHub, thus making the items automatically appear in our local project folder.
 
 
 
