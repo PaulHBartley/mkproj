@@ -11,7 +11,7 @@ The family consists of three callable functions:
 `$ mkproj` relies on its two child functions to operate.  
 `$ mkvenv` and `$ mkrepo`, on the other hand, can do things on their own. How convenient.
 <br>  
-Let's look at what this trio of functions working together can do for us.
+Let's look at what this trio of functions together can do for us.
 <br>  
 ### Goal: Make a Python project folder.  
 What do we need for this folder?  
@@ -21,13 +21,13 @@ What do we need for this folder?
 
 Fine.
 
-We will call `$mkproj <my-new-python-project>` to
+We will call `$mkproj <my-new-python-project>` 
 - install a Python virtual environment inside the folder.
 - initialize the folder as a git repository.
 - connect the folder's git repository with a remote repository.
   
-Having these three components in place would be a good starting point for a Python project.
-But it would be even better if we could 
+This is a good start.  
+But if we want
   
 - An activated virtual environment
 - 
