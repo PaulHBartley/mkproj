@@ -3,7 +3,6 @@
 **mkproj** is a family of three bash functions to be installed as executable files.
 
 ## Compatibility
-
 The functions have been tested in **GNU bash, version 5.0.17** on **Ubuntu 20.04**.
 They should work in other bash 5.0+ environments (assuming Python 3.5+ is installed).
 
@@ -11,13 +10,13 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+ is instal
 - Python 3.5+ (tested with Python 3.8.5)
 - Python venv module  
 
-## Bash environment variables needed for connecting to GitHub:  
+## Bash environment variables that need to be defined for connecting to GitHub:
 - GITHUB_USERNAME
 - GITHUB_TOKEN
 - GITHUB_TEMPLATE_REPO
+(set these in the `~/.bashrc` file)
 
 ## Files to be installed  
-
 `$ mkproj` <-- parent function  
 `$ mkvenv` <-- child function #1  
 `$ mkrepo` <-- child function #2  
