@@ -14,7 +14,7 @@ The family consists of three callable functions:
 Let's look at what this trio of functions can do for us together.
 <br>  
 ### Goal: Make a Python project folder.  
-What do we need for this folder?  
+What does this folder need to have?  
 - A Python virtual environment  
 - A local git repository  
 - A remote repository connected with the local repository 
