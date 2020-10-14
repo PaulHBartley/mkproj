@@ -2,6 +2,11 @@
 
 **mkproj** is a family of three bash functions to be installed as executable files.
 
+## Files to be installed  
+`$ mkproj` <-- parent function  
+`$ mkvenv` <-- child function #1  
+`$ mkrepo` <-- child function #2  
+  
 ## Compatibility
 The functions have been tested in **GNU bash, version 5.0.17** on **Ubuntu 20.04**.
 They should work in other bash 5.0+ environments (assuming Python 3.5+ is installed).
@@ -16,11 +21,6 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+ is instal
 - GITHUB_TEMPLATE_REPO
 (set these in the `~/.bashrc` file)
 
-## Files to be installed  
-`$ mkproj` <-- parent function  
-`$ mkvenv` <-- child function #1  
-`$ mkrepo` <-- child function #2  
-  
 ### To install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`:  
 
 1) Fork the **mkproj** repo to your GitHub account.
