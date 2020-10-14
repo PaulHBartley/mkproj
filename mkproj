@@ -4,13 +4,12 @@ function mkproj() {
 
 #######################################################################################
 # OVERVIEW
-# This function consolidates the process of setting up a Python project folder into one
+# This function simplifies the process of setting up a Python project folder into one
 # command with three yes/no prompts.
 #
 # OPERATION
-# "$ mkproj <directory>" takes an as-to-be-created or existing <directory> and calls
-# the "$ mkvenv" and "$ mkrepo" functions, which take care of setting up <directory> as
-# a Python project.
+# "$ mkproj <directory>" passes <directory> to the "$ mkvenv" and "$ mkrepo" functions,
+# which then take care of setting up <directory> as a Python project.
 #
 # "$ mkproj <directory>"
 # 1. Prepare <directory> as a Python virtual environment.
