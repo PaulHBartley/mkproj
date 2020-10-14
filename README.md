@@ -14,13 +14,20 @@ However, `$ mkvenv` and `$ mkrepo` can do things on their own. How convenient.
 Let's look at what `$ mkproj` can do for us.
 <br>  
 ### Goal: Make a Python project folder.  
+What do we need for this folder?  
+- A Python virtual environment  
+- A local git repository  
+- A remote repository connected with the local repository 
+
+Fine.
+
 What do we need to do for this folder?  
 - Install a Python virtual environment inside the folder.
 - Initialize the folder as a git repository.
 - Connect the git repository with a remote repository.
   
 Having these three components in place would be a good starting point for a Python project.
-But what would be even better is if we could give our folder the extra   
+But it would be even better if we could 
   
 - An activated virtual environment
 - 
