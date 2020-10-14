@@ -5,6 +5,7 @@
 ## Compatibility
 
 Thus far, **mkproj** has been tested in **GNU bash, version 5.0.17** on **Ubuntu 20.04**.
+The scripts should work 
 
 
 
