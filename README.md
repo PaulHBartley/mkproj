@@ -17,6 +17,7 @@ Let's look at an example of how we would use `$ mkproj` to make a Python project
 ### Goal: Make a Python project folder.  
 <br>  
 What do we need for this folder?  
+<br>
   
   
 - A Python virtual environment installed inside the folder, ready to be activated
