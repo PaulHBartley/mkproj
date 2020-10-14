@@ -11,7 +11,7 @@ The family consists of three callable functions:
 `$ mkproj` relies on its two child functions to operate.  
 `$ mkvenv` and `$ mkrepo`, on the other hand, can do things on their own. How convenient.
 <br>  
-Let's look at what this trio of functions together can do for us.
+Let's look at what this trio of functions can do for us.
 <br>  
 ### Goal: Make a Python project folder.  
 What do we need for this folder?  
