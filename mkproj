@@ -9,7 +9,7 @@ function mkproj() {
 #
 # OPERATION
 # Calling $ mkproj <directory> passes <directory> to the $ mkvenv and $ mkrepo functions,
-# which then handle the tasks for setting up <directory> as a Python project.
+# which then handle setting up <directory> as a Python project.
 #
 # When $ mkproj is called, the command presents three Yes/No prompts:
 # 1) Activate <directory> as a Python virtual environment? y/n
