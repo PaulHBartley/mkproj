@@ -11,12 +11,12 @@ The family consists of three callable functions:
  <br>  
 `$ mkproj` relies on its two child functions to operate. 
 However, `$ mkvenv` and `$ mkrepo` can operate independently. How convenient.
- <br>  
+<br>  
 Let's look at an example of how we would use `$ mkproj` to make a Python project.
-  
-  
+<br>  
 ### Goal: Make a Python project folder.  
-<br>
+<br>  
+
 What do we need for this folder?  
   
 - A Python virtual environment installed inside the folder, ready to be activated.
