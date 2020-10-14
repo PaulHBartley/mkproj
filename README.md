@@ -38,7 +38,7 @@ With `$ mkproj my-new-python-project` we can also
    - .gitignore  
    - README.md  
    - LICENSE  
-   - Install.md
+   - INSTALL.md
    - whatever else!
 - sync the local `my-new-python-project` repo with its remote counterpart on GitHub, thus making these useful items automatically appear in our local project folder.
 
