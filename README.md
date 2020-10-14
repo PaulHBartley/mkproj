@@ -15,7 +15,7 @@ Let's look at an example of how we would use `$ mkproj` to make a Python project
 <br>  
 ### Goal: Make a Python project folder.  
 <br>  
-What do we need for this folder?  
+What does this folder need?  
 <br>
   
   
