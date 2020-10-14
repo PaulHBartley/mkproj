@@ -19,9 +19,9 @@ What do we need for this folder?
 <br>
   
   
-- A Python virtual environment installed inside the folder, ready to be activated
-- A git repository initialized inside the folder, ready to keep an eye on things
-- A remote git repository paired with the local repository, for keepsake and collaboration
+- A Python virtual environment installed inside the folder
+- A git repository
+- A remote git repository paired with the local repository
   
 Having these three components in place would be a good starting point for a Python project.
 But what would be even better is if we could give our folder the extra   
