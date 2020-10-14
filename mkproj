@@ -2,15 +2,15 @@
 
 function mkproj() {
 
-###########################################################################
+#######################################################################################
 # OVERVIEW
-# This function consolidates the process of setting up a Python project
-# folder into one command with three yes/no prompts.
+# This function consolidates the process of setting up a Python project folder into one
+# command with three yes/no prompts.
 #
 # OPERATION
-# "$ mkproj <directory>" takes an as-to-be-created or existing <directory>
-# and calls the "$ mkvenv" and "$ mkrepo" functions, which take care of
-# setting up <directory> as a Python project.
+# "$ mkproj <directory>" takes an as-to-be-created or existing <directory> and calls
+# the "$ mkvenv" and "$ mkrepo" functions, which take care of setting up <directory> as
+# a Python project.
 #
 # "$ mkproj <directory>"
 # 1. Prepare <directory> as a Python virtual environment.
@@ -19,13 +19,12 @@ function mkproj() {
 # C) Create a remote repository for <directory> on GitHub? y/n
 #
 # DIRECTORY BEHAVIOR
-# "$ mkproj <directory>" -- makes <directory> (new or existing) a Python
-# project folder inside the current working directory.
-# "$ mkproj <path>/<directory>" -- makes <directory> (new or existing) a
-# Python project folder inside the path destination directory.
-# "$ mkproj" -- makes the current working directory into a Python project
-# folder.
-###########################################################################
+# "$ mkproj <directory>" -- makes <directory> (new or existing) a Python project folder
+# inside the current working directory.
+# "$ mkproj <path>/<directory>" -- makes <directory> (new or existing) a Python project
+# folder inside the path destination directory.
+# "$ mkproj" -- makes the current working directory into a Python project folder.
+#######################################################################################
 
 BLUE='\033[01;34m'
 NC='\033[0m'
