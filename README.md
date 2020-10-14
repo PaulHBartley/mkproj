@@ -15,7 +15,7 @@ However, `$ mkvenv` and `$ mkrepo` can operate independently. How convenient.
 Let's look at an example of how we would use `$ mkproj` to make a Python project.
 
 ### Goal: Make a Python project folder.  
-<br>  
+<br>
 What do we need for this folder?
 
 - A Python virtual environment installed inside the folder, ready to be activated.
