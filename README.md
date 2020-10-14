@@ -1,7 +1,7 @@
 
 # mkproj
 
-This is a family of simple bash scripts to aid in setting up a Python project.
+This is a family of simple bash scripts to aid in the setup of a Python project.
 
 The family consists of three callable functions:
 
