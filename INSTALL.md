@@ -22,5 +22,5 @@ The scripts should work in other bash 5.0+ environments (assuming Python 3.5+ is
    - If it doesn't already exist, you could create a `~/bin` directory and place the **mkproj** files in `~/bin`.  
    - If you do create a `~/bin` directory, make sure to add `/home/<username>/bin/` to the PATH variable.  
       - Any local `<directory>` can be appended to the PATH variable by adding a line to the `~/.bashrc` file:  
-      - `export PATH="$PATH:/home/<username>/<directory>`.
-      - You will have to restart the shell for the changes to take effect.
+         - `export PATH="$PATH:/home/<username>/<directory>`.
+         - You will have to restart the shell for the changes to take effect.
