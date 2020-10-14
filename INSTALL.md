@@ -1,14 +1,16 @@
 # mkproj  
 
-A suite of simple bash functions for quickly setting up a Python project folder.
+A collection of simple bash scripts for quickly setting up a Python project folder.
+
+## Compatibility
+
+**mkproj** is a collection of bash shell scripts. Thus far, 
 
 ## Files to be installed  
 `$ mkproj` <-- parent function  
 `$ mkvenv` <-- child function #1  
 `$ mkrepo` <-- child function #2  
-
-## Compatibility
-**mkproj** is a collection of bash shell scripts. Thus far,   
+  
 
 
 ### To install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`:  
