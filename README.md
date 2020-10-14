@@ -18,7 +18,6 @@ Let's look at an example of how we would use `$ mkproj` to make a Python project
 <br>  
 What do we need for this folder?  
   
-  <br>  
   
 - A Python virtual environment installed inside the folder, ready to be activated
 - A git repository initialized inside the folder, ready to keep an eye on things
