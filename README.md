@@ -19,9 +19,9 @@ What do we need to do for this folder?
 <br>
   
   
-- Install a Python virtual environment inside the folder
-- Initialize the folder as a git repository
-- Connect the git repository with a remote repository
+- Install a Python virtual environment inside the folder.
+- Initialize the folder as a git repository.
+- Connect the git repository with a remote repository.
   
 Having these three components in place would be a good starting point for a Python project.
 But what would be even better is if we could give our folder the extra   
