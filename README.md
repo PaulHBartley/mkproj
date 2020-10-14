@@ -20,8 +20,11 @@ Let's look at an example of how we would use `$ mkproj` to make a Python project
 What do we need for this folder?  
   
 - A Python virtual environment installed inside the folder, ready to be activated.
-- A git repository initialized inside the folder, ready to keep track of changes made.
+- A git repository initialized inside the folder, ready to keep track of everything.
 - A remote git repository paired with the local repository inside the folder, for keepsake and collaboration.
+  
+Having these three things in place would be a good starting point for a Python project folder.
+But what would be even better is if we could give our project folder 
 
 
 
