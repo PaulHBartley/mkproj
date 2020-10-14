@@ -13,7 +13,7 @@ Whereas `$ mkproj` relies on its two child functions to operate, `$ mkvenv` and 
 Let's look at what this trio of functions can do for us together.
 <br>  
 ### Goal: Make a Python project folder.  
-What do we want to give this folder?  
+What do we need inside this folder?  
 - A Python virtual environment  
 - A local git repository  
 - A remote repository connected with the local repository 
