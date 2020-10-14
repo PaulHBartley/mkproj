@@ -15,7 +15,7 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+ is instal
 - Python 3.5+ (tested with Python 3.8.5)
 - Python venv module  
 
-## Bash environment variables that need to be defined for connecting to GitHub:
+## Bash environment needed for connecting to GitHub:
 (set these in the `~/.bashrc` file)
 - GITHUB_USERNAME
 - GITHUB_TOKEN
