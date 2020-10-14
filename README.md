@@ -48,6 +48,6 @@ When `$ mkproj my-new-python-project` finishes, we will have
    - an activated Python virtual environment (if we so choose)
    - an initalized git repository ""
    - a connected remote repository on GitHub ""
-   - an assortment of preset items for our project ""
+   - a starter kit of preset items for our project ""
 
 
