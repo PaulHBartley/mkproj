@@ -30,7 +30,11 @@ We will call `$mkproj my-new-python-project` to
 This is a good start.  
 Taking this a step further, with `$ mkproj my-new-python-project` we can
   
-- make `my-new-python-project` the active Python virtual environment for that shell session (if we so choose)
+- activate `my-new-python-project` as the Python virtual environment for that shell session.
+- use a [GitHub Template Repository] (https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-template-repository) to automatically populate the `my-new-python-project` folder with the following useful files:
+-- .gitignore
+-- README.md
+-- LICENSE
 
 
 
