@@ -9,9 +9,9 @@ The family consists of three callable functions:
 `$ mkrepo`  <-- child #2  
  <br>  
 `$ mkproj` relies on its two child functions to operate. 
-However, `$ mkvenv` and `$ mkrepo` can do things on their own. How convenient.
+`$ mkvenv` and `$ mkrepo`, on the other hand, can do things on their own. How convenient.
 <br>  
-Let's look at what `$ mkproj` can do for us.
+Let's look at what this trio of functions can do for us.
 <br>  
 ### Goal: Make a Python project folder.  
 What do we need for this folder?  
@@ -21,7 +21,7 @@ What do we need for this folder?
 
 Fine.
 
-What do we need to do for this folder?  
+We will call `$mkproj <folder>` to
 - Install a Python virtual environment inside the folder.
 - Initialize the folder as a git repository.
 - Connect the git repository with a remote repository.
