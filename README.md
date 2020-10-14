@@ -22,7 +22,7 @@ What do we need for this folder?
 Fine.
 
 We will call `$mkproj my-new-python-project` to  
-- create a new directory called `my-new-python-project`
+- create a new directory called `my-new-python-project`.
 - install a Python virtual environment inside the directory.
 - initialize the directory as a git repository.
 - connect the directory's git repository with a remote repository.
