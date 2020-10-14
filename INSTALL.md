@@ -4,7 +4,7 @@ A collection of simple bash scripts for quickly setting up a Python project fold
 
 ## Compatibility
 
-**mkproj** is a collection of bash shell scripts. Thus far, 
+Thus far, **mkproj** has been tested in GNU bash, version 5.0.17 on Ubuntu 20.04. 
 
 ## Files to be installed  
 `$ mkproj` <-- parent function  
