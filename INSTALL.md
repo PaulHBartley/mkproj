@@ -16,7 +16,7 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+ is instal
 - Python venv module  
 
 ## Bash environment needed for connecting to GitHub:
-(set these in the `~/.bashrc` file)
+(define these in the `~/.bashrc` file)
 - GITHUB_USERNAME
 - GITHUB_TOKEN
 - GITHUB_TEMPLATE_REPO
@@ -34,4 +34,9 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+ is instal
    - If you do create a `~/bin` directory, make sure to add `/home/<username>/bin/` to the PATH variable.  
       - Any local `<directory>` can be appended to the PATH variable by adding this line to the `~/.bashrc` file:  
          - `export PATH="$PATH:/home/<username>/<directory>`.
-   - You will have to restart the shell for the changes to take effect.
+   - You will have to restart the shell for the changes to take effect.  
+   
+5) Add the following to the `~/.bashrc` file:
+   - `source ~/<directory>/mkproj`
+   - `source ~/<directory>/mkvenv`
+   - `source ~/<directory>/mkrepo`
