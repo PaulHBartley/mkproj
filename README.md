@@ -27,7 +27,10 @@ We will call `$mkproj my-new-python-project` to
 - initialize the directory as a git repository.
 - connect the local repository to a remote repository on GitHub. 
   
-This is a good start.  
+This is a good start.
+### Real Goal: Make a Python project folder useful.
+
+
 Taking this a step further, with `$ mkproj my-new-python-project` we can
   
 - activate `my-new-python-project` as the Python virtual environment for that shell session.
