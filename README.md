@@ -50,7 +50,7 @@ When `$ mkproj my-new-python-project` finishes, we will have
    - a set of starter items for our project ""  
    
 ### For more information:  
-Please see the [INSTALL.md](https://github.com/PaulHBartley/mkproj/blob/main/INSTALL.md) file for how to install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`.
+Please see [INSTALL.md](https://github.com/PaulHBartley/mkproj/blob/main/INSTALL.md) for how to install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`.
 
 
 
