@@ -25,7 +25,7 @@ We will call `$mkproj my-new-python-project` to
 - create a new directory called `my-new-python-project`.
 - install a Python virtual environment inside the directory.
 - initialize the directory as a git repository.
-- connect the directory's git repository with a new remote repository on GitHub called `my-new-python-project`.  
+- connect the local repository to a remote repository on GitHub. 
   
 This is a good start.  
 Taking this a step further, with `$ mkproj my-new-python-project` we can
