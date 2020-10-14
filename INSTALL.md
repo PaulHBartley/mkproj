@@ -20,6 +20,6 @@ The scripts should work in other bash 5.0+ environments (assuming Python 3.5+ is
 
 3) Copy `$ mkproj`, `$ mkvenv`, and `$ mkrepo` into a local directory listed in the PATH environment variable (where the shell looks for executables).
    - If it doesn't already exist, you could create a `~/bin` directory and place the **mkproj** files in `~/bin`.  
-   - If you do create a `~/bin` directory, make sure to add `/home/<username>/bin/` to your PATH variable.  
+   - If you do create a `~/bin` directory, make sure to add `/home/<username>/bin/` to the PATH variable.  
    - A `<directory>` can be appended to the PATH variable by adding the following line to the `~/.bashrc` file:  
    - `export PATH="$PATH:/home/<username>/<directory>`.
