@@ -46,8 +46,11 @@ With `$ mkproj my-new-python-project` we can also
 When `$ mkproj my-new-python-project` finishes, we will have  
 - a local folder called `my-new-python-project` with
    - an activated Python virtual environment (if we so choose)
-   - an initalized git repository ""
+   - an initalized local git repository ""
    - a remote repository on GitHub ""
-   - a pack of preset items for our project ""
+   - a pack of preset items for our project ""  
+   
+### For information about how to install `$ mkproj`, `$ mkvenv', and `$ mkrepo`:  
+Please see the INSTALL.md.
 
 
