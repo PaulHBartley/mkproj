@@ -1,6 +1,6 @@
 # Installing mkproj  
 
-**mkproj** is a family of three bash functions that work together to set up a Python project folder.
+**mkproj** is a family of three bash functions to be installed as executable files.
 
 ## Compatibility
 
