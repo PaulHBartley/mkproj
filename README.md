@@ -21,13 +21,14 @@ What do we need for this folder?
 
 Fine.
 
-We will call `$mkproj <my-new-python-project>` 
-- install a Python virtual environment inside the folder.
-- initialize the folder as a git repository.
-- connect the folder's git repository with a remote repository.
+We will call `$mkproj my-new-python-project` to  
+- create a new directory called `my-new-python-project`
+- install a Python virtual environment inside the directory.
+- initialize the directory as a git repository.
+- connect the directory's git repository with a remote repository.
   
 This is a good start.  
-But if we want
+But if we wanted to, we could also 
   
 - An activated virtual environment
 - 
