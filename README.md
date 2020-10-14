@@ -21,7 +21,7 @@ What do we need for this folder?
 
 Fine.
 
-We will call `$mkproj <folder>` to
+We will call `$mkproj <my-new-python-project>` to
 - install a Python virtual environment inside the folder.
 - initialize the folder as a git repository.
 - connect the folder's git repository with a remote repository.
