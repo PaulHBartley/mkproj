@@ -1,10 +1,57 @@
 
-# OVERVIEW
+# mkproj
+
+This is a family of simple bash scripts to aid in the process of setting up a Python project.
+
+The family consists of three callable functions:
+
+`$ mkproj`  <-- the parent  
+`$ mkvenv`  <-- child #1  
+`$ mkrepo`  <-- child #2  
+ <br>  
+`$ mkproj` relies on its two child functions to operate. 
+However, `$ mkvenv` and `$ mkrepo` can operate independently. How convenient.
+<br>  
+Let's look at an example of how we would use `$ mkproj` to make a Python project.
+<br>  
+### Goal: Make a Python project folder.  
+<br>  
+
+What do we need for this folder?  
+  
+- A Python virtual environment installed inside the folder, ready to be activated.
+- A git repository initialized inside the folder, ready to keep an eye on all that goes on.
+- A remote git repository paired with the local repository inside the folder, for keepsake and collaboration.
+  
+Having these three things in place would be a good starting point for a Python project folder.
+But what would be even better is if we could give our project folder the extra props it needs to be truly 
+
+
+
+
+
+
+
+
+
+ <br>  
+ <br>  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+## `$ mkproj` Overview
 This function consolidates the process of setting up a Python project
 folder into one command with three yes/no prompts.
 
 # OPERATION
-"$ mkproj <directory>" takes an as-to-be-created or existing <directory>
+$ mkproj directory takes an as-to-be-created or existing <directory>
 and calls the "$ mkvenv" and "$ mkrepo" functions, which take care of
 setting up <directory> as a Python project.
 
