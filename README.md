@@ -32,14 +32,14 @@ This is a good start. But we can do more.
 
 With `$ mkproj my-new-python-project` we can also
   
-- set `my-new-python-project` as the active Python virtual environment for that shell session.
+- set `my-new-python-project` as the active Python virtual environment for that shell session
 - use a [GitHub Template Repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-template-repository) to automatically populate the remote `my-new-python-project` repo with any number of useful items:  
    - .gitignore  
    - README.md  
    - LICENSE  
    - INSTALL.md
    - whatever else!
-- sync the local `my-new-python-project` repo with its remote counterpart on GitHub, thus making these useful items automatically appear in our local project folder.
+- sync the local `my-new-python-project` repo with its remote counterpart on GitHub, thus making these useful items automatically appear in our local project folder
 
 ### Result: a Python project folder we can use.
 When `$ mkproj my-new-python-project` finishes, we will have  
