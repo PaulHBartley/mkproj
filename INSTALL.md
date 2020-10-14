@@ -21,7 +21,7 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+ is instal
 - GITHUB_TEMPLATE_REPO
 (set these in the `~/.bashrc` file)
 
-### To install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`:  
+## To install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`:  
 
 1) Fork the **mkproj** repo to your GitHub account.
 
