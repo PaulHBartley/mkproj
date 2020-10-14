@@ -1,4 +1,3 @@
-
 # mkproj
 
 This is a family of simple bash scripts to aid in the setup of a Python project.
@@ -25,7 +24,7 @@ What do we need for this folder?
 - A remote git repository paired with the local repository, for keepsake and collaboration
   
 Having these three components in place would be a good starting point for a Python project.
-But what would be even better is if we could give our folder the extra sprinkles we always wished would just be there:  
+But what would be even better is if we could give our folder the extra   
   
 - An activated virtual environment
 - 
