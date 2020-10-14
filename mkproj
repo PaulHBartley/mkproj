@@ -20,7 +20,7 @@ function mkproj() {
 #
 # DIRECTORY BEHAVIOR
 # "$ mkproj <directory>" -- makes <directory> (new or existing) a Python
-# project folder within the current working directory.
+# project folder inside the current working directory.
 # "$ mkproj <path>/<directory>" -- makes <directory> (new or existing) a
 # Python project folder inside the path destination directory.
 # "$ mkproj" -- makes the current working directory into a Python project

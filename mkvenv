@@ -4,8 +4,8 @@ function mkvenv() {
 
 #################################################################################################
 # OVERVIEW
-# This function calls the "$ python venv" module to create a Python virtual environment, and it
-# gives the option to activate the environment directly after the environment is created.
+# This function calls the "$ python venv" module to create a Python virtual environment, with the
+# option to activate the environment directly after the environment is created.
 #
 # OPERATION
 # "$ mkvenv -a <directory>" installs a .venv folder inside <directory> and calls "$ source" to
@@ -23,7 +23,7 @@ function mkvenv() {
 #
 # DIRECTORY BEHAVIOR
 # "$ mkvenv [-a] <directory>" -- makes <directory> (new or existing) a Python environment folder
-# within the current working directory.
+# inside the current working directory.
 # "$ mkvenv [-a] <path>/<directory>" -- makes <directory> (new or existing) a Python environment
 # folder inside the path destination directory.
 # "$ mkvenv [-a]" -- makes the current working directory into a Python environment folder.
