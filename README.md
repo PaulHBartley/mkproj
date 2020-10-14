@@ -9,7 +9,7 @@ The family consists of three callable functions:
 `$ mkrepo`  <-- child #2  
  <br>  
 `$ mkproj` relies on its two child functions to operate. 
-However, `$ mkvenv` and `$ mkrepo` function on their own. How convenient.
+However, `$ mkvenv` and `$ mkrepo` can do things on their own. How convenient.
 <br>  
 Let's look at an example of how we would use `$ mkproj` to make a Python project.
 <br>  
@@ -19,9 +19,9 @@ What do we need to do for this folder?
 <br>
   
   
-- A Python virtual environment
-- A git repository
-- A remote git repository paired with the local repository
+- Install a Python virtual environment inside the folder
+- Initialize the folder as a git repository
+- Connect the git repository with a remote repository
   
 Having these three components in place would be a good starting point for a Python project.
 But what would be even better is if we could give our folder the extra   
