@@ -16,10 +16,10 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+ is instal
 - Python venv module  
 
 ## Bash environment variables that need to be defined for connecting to GitHub:
+(set these in the `~/.bashrc` file)
 - GITHUB_USERNAME
 - GITHUB_TOKEN
 - GITHUB_TEMPLATE_REPO
-(set these in the `~/.bashrc` file)
 
 ## To install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`:  
 
