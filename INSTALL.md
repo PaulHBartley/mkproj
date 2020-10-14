@@ -5,7 +5,7 @@
 ## Compatibility
 
 **mkproj** has been tested on **Ubuntu 20.04** in **GNU bash, version 5.0.17**.
-The scripts should work in other bash 5.0+ environments (assuming Python 3.6+ is installed). But on other systems and/or shells, until further testing is done,  users are advised to practice caution with these scripts. Fortunately, nothing terrible is going to happen! If any problems are found, however, please don't hesitate to open an issue.
+The scripts should work in other bash 5.0+ environments (assuming Python 3.6+ is installed). On other systems and/or shells, however, users are advised to practice caution with these scripts until further testing is done. Fortunately, nothing terrible is going to happen! If any problems are found, please don't hesitate to open an issue.
 
 ## Files to be installed  
 `$ mkproj` <-- parent function  
@@ -16,4 +16,6 @@ The scripts should work in other bash 5.0+ environments (assuming Python 3.6+ is
 
 1) Fork the **mkproj** repo to your GitHub account.
 
-2) 
+2) Clone the **mkproj** repo to your local drive.
+
+3) 
