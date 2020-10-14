@@ -18,7 +18,9 @@ The scripts should work in other bash 5.0+ environments (assuming Python 3.5+ is
 
 2) Clone the **mkproj** repo from your GitHub account to your local drive.
 
-3) Copy `$ mkproj`, `$ mkvenv`, and `$ mkrepo` into a local directory listed in the PATH environment variable (where the shell looks for executables).
+3) Use `$ chmod +x mkproj mkvenv mkrepo` to make the files executable.
+
+4) Copy `$ mkproj`, `$ mkvenv`, and `$ mkrepo` into a local directory listed in the PATH environment variable (where the shell looks for executables).
    - If it doesn't already exist, you could create a `~/bin` directory and place the **mkproj** files in `~/bin`.  
    - If you do create a `~/bin` directory, make sure to add `/home/<username>/bin/` to the PATH variable.  
       - Any local `<directory>` can be appended to the PATH variable by adding a line to the `~/.bashrc` file:  
