@@ -13,7 +13,8 @@ The family consists of three callable functions:
 However, `$ mkvenv` and `$ mkrepo` can operate independently. How convenient.
  <br>  
 Let's look at an example of how we would use `$ mkproj` to make a Python project.
-
+  
+  
 ### Goal: Make a Python project folder.  
 <br>
 What do we need for this folder?  
