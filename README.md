@@ -9,7 +9,7 @@ The family consists of three callable functions:
 `$ mkrepo`  <-- child #2  
  <br>  
 `$ mkproj` relies on its two child functions to operate. 
-However, `$ mkvenv` and `$ mkrepo` can operate independently. How convenient.
+However, `$ mkvenv` and `$ mkrepo` can function on their own. How convenient.
 <br>  
 Let's look at an example of how we would use `$ mkproj` to make a Python project.
 <br>  
