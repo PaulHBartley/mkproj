@@ -8,8 +8,7 @@ The family consists of three callable functions:
 `$ mkvenv`  <-- child #1  
 `$ mkrepo`  <-- child #2  
  <br>  
-`$ mkproj` relies on its two child functions to operate, `$ mkvenv` and `$ mkrepo`.  
-`$ mkvenv` and `$ mkrepo`, on the other hand, can do things on their own. How convenient.
+Whereas `$ mkproj` relies on its two child functions to operate, `$ mkvenv` and `$ mkrepo` can do things on their own. How convenient.
 <br>  
 Let's look at what this trio of functions can do for us together.
 <br>  
