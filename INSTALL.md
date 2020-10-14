@@ -16,6 +16,6 @@ The scripts should work in other bash 5.0+ environments (assuming Python 3.5+ is
 
 1) Fork the **mkproj** repo to your GitHub account.
 
-2) Clone the **mkproj** repo to your local drive.
+2) Clone the **mkproj** repo from GitHub to your local drive.
 
-3) 
+3) Copy `$ mkproj`, `$ mkvenv`, and `$ mkrepo` into a directory 
