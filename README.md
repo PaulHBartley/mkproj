@@ -110,7 +110,7 @@ without connecting to the GitHub API.
   <br>  
   
 ## For more information:  
-Please see [INSTALL.md](https://github.com/PaulHBartley/mkproj/blob/main/INSTALL.md) for how to install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`.
+Please see [INSTALL.md](https://github.com/PaulHBartley/mkproj/blob/main/INSTALL.md) for how to install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`.  
 Also, for anyone interested, there is a [CONTRIBUTING](https://github.com/PaulHBartley/mkproj/blob/main/CONTRIBUTING.md) page with some ideas for how this project might take shape in the future.
 
 
