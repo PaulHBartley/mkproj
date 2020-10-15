@@ -50,7 +50,18 @@ When `$ mkproj my-new-python-project` finishes, we will have
    - a remote repository on GitHub ""
    - a set of starter items for our project ""  
    
-## Operation  
+## `$ mkproj` Operation  
+ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkrepo` functions, which then handle setting up `<directory>` as a Python project.
+
+ When `$ mkproj` is called, the command presents three Yes/No prompts:
+ 1) Activate `<directory>` as a Python virtual environment? y/n
+ 2) Initialize `<directory>` as a local git repository? y/n
+ 3) Set up `<directory>` as a remote repository on GitHub? y/n
+
+### Directory Behavior
+ `$ mkproj <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.
+ `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the path destination directory.
+ `$ mkproj` -- makes the current working directory into a Python project folder.
 
 
 
