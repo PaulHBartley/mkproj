@@ -53,7 +53,7 @@ When `$ mkproj my-new-python-project` finishes, we will have
 <end>  </end>  
   <br>
 ## `$ mkproj` Operation
-`$ mkvenv -a <directory>`
+`$ mkproj <directory>`
 
 - Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkrepo` functions, which then handle setting up `<directory>` as a Python project.
 
