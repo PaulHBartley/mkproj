@@ -11,7 +11,7 @@ The family consists of three callable functions:
  <br>  
 The parent function, `$ mkproj`, acts as a "main" function and relies on its two child functions to operate. The child functions, on the other hand, can do things on their own. How convenient.
 <br>  
-Let's look at what this trio of functions can do together.
+*Let's look at what this trio of functions can do together.*
 <br>  
 #### Goal: Make a Python project folder.  
 What do we need inside this folder?  
@@ -19,7 +19,7 @@ What do we need inside this folder?
 - A local Git repository  
 - A remote repository connected with the local repository 
 
-Fine.
+*Fine.*
 
 We can call `$ mkproj my-new-python-project` to  
 - create a new directory called `my-new-python-project`
@@ -27,7 +27,7 @@ We can call `$ mkproj my-new-python-project` to
 - initialize the directory as a Git repository
 - connect the local repository to a remote repository on GitHub 
   
-This is a good start. But we can do more.
+*This is a good start. But we can do more.*
 #### Real Goal: Make a Python project folder useful.
 
 
