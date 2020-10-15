@@ -12,7 +12,8 @@ The family consists of three callable functions:
 The parent function, `$ mkproj`, acts as a "main" function and relies on its two child functions to operate. The child functions, on the other hand, can do things on their own. How convenient.
 <br>  
 Let's look at what this trio of functions can do together.
-<br>  
+  <br>  
+  
 #### Goal: Make a Python project folder.  
 What do we need inside this folder?  
 - A Python virtual environment  
