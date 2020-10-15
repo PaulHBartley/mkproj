@@ -24,7 +24,7 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+, Git, and
 (define these in the `~/.bashrc` file)
 - GITHUB_USERNAME
 - GITHUB_TOKEN
-- GITHUB_TEMPLATE_REPO
+- GITHUB_TEMPLATE_REPO (the name of a template repository)
 
 ## To install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`:  
 
