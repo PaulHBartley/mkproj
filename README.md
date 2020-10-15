@@ -33,7 +33,7 @@ This is a good start. But we can do more.
   
   <br>  
   
-#### Real Goal: Make a Python project folder useful.
+#### Real Goal: Make a Python project folder that we can use right away.
 
 
 With `$ mkproj my-new-python-project` we can also
