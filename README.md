@@ -66,7 +66,7 @@ When `$ mkproj my-new-python-project` finishes, we will have
 
 - When `$ mkproj <directory>` is called, the command presents three Yes/No prompts:
   1. Activate `<directory>` as a Python virtual environment? y/n
-  2. Initialize `<directory>` as a local git repository? y/n
+  2. Initialize `<directory>` as a local Git repository? y/n
   3. Set up `<directory>` as a remote repository on GitHub? y/n
   
 #### Directory Behavior  
@@ -94,7 +94,7 @@ When `$ mkproj my-new-python-project` finishes, we will have
 `$ mkrepo -r <directory>`  
   
 - Calling `$ mkrepo -r <directory>` sends a call to the GitHub API to create a new remote repository (called
-`<directory>`) from a pre-defined template. The script then git-initializes a new or existing local
+`<directory>`) from a pre-defined template. The script then Git-initializes a new or existing local
 `<directory>` and links it with the newly-created remote repository.  
   
 `$ mkrepo <directory>`  
@@ -103,9 +103,9 @@ When `$ mkproj my-new-python-project` finishes, we will have
 without connecting to the GitHub API.  
   
 #### Directory Behavior  
-- `$ mkrepo [-r] <directory>` -- makes `<directory>` (new or existing) a git repository inside the current working directory.  
-- `$ mkrepo [-r] <path>/<directory>` -- makes `<directory>` (new or existing) a git repository inside the path directory.  
-- `$ mkrepo [-r]` -- makes the current working directory into a git repository.  
+- `$ mkrepo [-r] <directory>` -- makes `<directory>` (new or existing) a Git repository inside the current working directory.  
+- `$ mkrepo [-r] <path>/<directory>` -- makes `<directory>` (new or existing) a Git repository inside the path directory.  
+- `$ mkrepo [-r]` -- makes the current working directory into a Git repository.  
 <end>  </end>  
   <br>  
   
