@@ -63,7 +63,7 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
 - `$ mkproj <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.  
 - `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the path directory.  
 - `$ mkproj` -- makes the current working directory into a Python project folder.  
-<end>  
+<end>  </end>  
   <br>
 ## `$ mkvenv` Operation
 `$ mkvenv -a <directory>`  
@@ -78,7 +78,7 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
 - `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the current working directory.  
 - `$ mkvenv [-a] <path>/<directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the path directory.  
 - `$ mkvenv [-a]` -- makes the current working directory into a Python environment folder.  
-<end>  
+<end>  </end>  
   <br>
 ## `$ mkrepo` Operation
 `$ mkrepo -r <directory>`  
