@@ -69,10 +69,11 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
  ## `$ mkvenv` Operation
 `$ mkvenv -a <directory>`  
   
-Calling `$ mkvenv -a <directory>` installs a `.venv` folder inside `<directory>` and calls `$ source` to run a script named `activate` inside the `.venv` folder. Running the `activate` script sets `<directory>` as the active Python virtual environment for that shell session. The `activate` script places `(<directory>) $` to the left of the command line prompt (as shown), signaling that all Python calls made when `<directory>` is active will be routed to the Python interpreter in `/<path>/<directory>/.venv`. To return the Python environment to the system-wide Python install, type `$ deactivate`.
+- Calling `$ mkvenv -a <directory>` installs a `.venv` folder inside `<directory>` and calls `$ source` to run a script named `activate` inside the `.venv` folder. Running the `activate` script sets `<directory>` as the active Python virtual environment for that shell session. The `activate` script places `(<directory>) $` to the left of the command line prompt (as shown), signaling that all Python calls made when `<directory>` is active will be routed to the Python interpreter in `/<path>/<directory>/.venv`. To return the Python environment to the system-wide Python install, type `$ deactivate`.
 
 `$ mkvenv <directory>`  
- Calling `$ mkvenv <directory>` simply installs a `.venv` folder inside `<directory>` without activating `<directory>` as the Python virtual environment.
+
+- Calling `$ mkvenv <directory>` simply installs a `.venv` folder inside `<directory>` without activating `<directory>` as the Python virtual environment.
   
 #### Directory Behavior  
 - `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the current working directory.  
@@ -84,12 +85,13 @@ Calling `$ mkvenv -a <directory>` installs a `.venv` folder inside `<directory>`
  ## `$ mkrepo` Operation
 `$ mkrepo -r <directory>`  
   
- Calling `$ mkrepo -r <directory>` sends a call to the GitHub API to create a new remote repository (called
+- Calling `$ mkrepo -r <directory>` sends a call to the GitHub API to create a new remote repository (called
 `<directory>`) from a pre-defined template. The script then git-initializes a new or existing local
 `<directory>` and links it with the newly-created remote repository.  
   
 `$ mkrepo <directory>`  
- Calling `$ mkrepo <directory>` simply initializes `<directory>` (new or existing) as a local git repository
+
+- Calling `$ mkrepo <directory>` simply initializes `<directory>` (new or existing) as a local git repository
 without connecting to the GitHub API.  
   
 #### Directory Behavior  
