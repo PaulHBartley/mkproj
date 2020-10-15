@@ -14,6 +14,7 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+ is instal
 ## Dependencies  
 - Python 3.5+ (tested with Python 3.8.5)
 - Python venv module  
+- Git
 
 ## Bash environment variables needed for connecting to GitHub:
 (define these in the `~/.bashrc` file)
