@@ -9,13 +9,13 @@ function mkrepo() {
 #
 # OPERATION
 # $ mkrepo -r <directory> sends a call to the GitHub API to create a new remote repository (called
-# <directory>) from a pre-defined template. The script then git-initializes a new or existing local
+# <directory>) from a pre-defined template. The script then Git-initializes a new or existing local
 # <directory> and links it with the newly-created remote repository.
 #
-# $ mkrepo <directory> simply initializes <directory> (new or existing) as a local git repository
+# $ mkrepo <directory> simply initializes <directory> (new or existing) as a local Git repository
 # without connecting to the GitHub API.
 #
-# For the script to work, git needs to be installed, and the following variables need to be set in
+# For the script to work, Curl and Git need to be installed, and the following variables need to be set in
 # the active shell environment.
 #
 # GITHUB_USERNAME
@@ -23,11 +23,11 @@ function mkrepo() {
 # GITHUB_TEMPLATE_REPO
 #
 # DIRECTORY BEHAVIOR
-# $ mkrepo [-r] <directory> -- makes <directory> (new or existing) a git repository inside the
+# $ mkrepo [-r] <directory> -- makes <directory> (new or existing) a Git repository inside the
 # current working directory.
-# $ mkrepo [-r] <path>/<directory> -- makes <directory> (new or existing) a git repository inside
+# $ mkrepo [-r] <path>/<directory> -- makes <directory> (new or existing) a Git repository inside
 # the path destination directory.
-# $ mkrepo [-r] -- makes the current working directory into a git repository.
+# $ mkrepo [-r] -- makes the current working directory into a Git repository.
 #
 ###################################################################################################
 
