@@ -17,7 +17,7 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+, Git, and
 - Git
 - A GitHub account with
    - a Personal Access Token
-   - a Template Repository
+   - a [Template Repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-template-repository)
 - Curl
 
 ## Bash environment variables needed for connecting to the GitHub API:
