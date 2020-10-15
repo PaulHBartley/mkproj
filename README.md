@@ -80,6 +80,7 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
   
   <br>
 ## `$ mkrepo` Operation  
+
 - `$ mkrepo -r <directory>`  
    - Calling `$ mkrepo -r <directory>` sends a call to the GitHub API to create a new remote repository (called
 `<directory>`) from a pre-defined template. The script then git-initializes a new or existing local
