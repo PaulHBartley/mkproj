@@ -58,7 +58,7 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
  1) Activate `<directory>` as a Python virtual environment? y/n
  2) Initialize `<directory>` as a local git repository? y/n
  3) Set up `<directory>` as a remote repository on GitHub? y/n
-
+  
 #### Directory Behavior  
 - `$ mkproj <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.  
 - `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the path destination directory.  
@@ -72,7 +72,7 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
 
 `$ mkvenv <directory>`  
  - Calling `$ mkvenv <directory>` simply installs a `.venv` folder inside `<directory>` without activating `<directory>` as the Python virtual environment.
-
+  
 #### Directory Behavior  
 - `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the current working directory.  
 - `$ mkvenv [-a] <path>/<directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the path destination directory.  
