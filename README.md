@@ -59,9 +59,9 @@ When `$ mkproj my-new-python-project` finishes, we will have
  3) Set up `<directory>` as a remote repository on GitHub? y/n
 
 ### Directory Behavior
- `$ mkproj <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.
- `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the path destination directory.
- `$ mkproj` -- makes the current working directory into a Python project folder.
+ `$ mkproj <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.  
+ `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the path destination directory.  
+ `$ mkproj` -- makes the current working directory into a Python project folder.  
 
 
 
