@@ -49,8 +49,8 @@ When `$ mkproj my-new-python-project` finishes, we will have
    - an initalized local Git repository ""
    - a remote repository on GitHub ""
    - a set of starter items for our project ""  
-   
-   
+  
+  
 ## `$ mkproj` Operation  
  Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkrepo` functions, which then handle setting up `<directory>` as a Python project.
 
