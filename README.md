@@ -52,7 +52,8 @@ When `$ mkproj my-new-python-project` finishes, we will have
   
   <br>
 ## `$ mkproj` Operation  
- Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkrepo` functions, which then handle setting up `<directory>` as a Python project.
+- `$ mkproj <directory>`  
+   - Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkrepo` functions, which then handle setting up `<directory>` as a Python project.
 
  When `$ mkproj` is called, the command presents three Yes/No prompts:
  1) Activate `<directory>` as a Python virtual environment? y/n
