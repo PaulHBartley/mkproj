@@ -54,7 +54,7 @@ When `$ mkproj my-new-python-project` finishes, we will have
 ## `$ mkproj` Operation  
 Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkrepo` functions, which then handle setting up `<directory>` as a Python project.
 
- When `$ mkproj` is called, the command presents three Yes/No prompts:
+ When `$ mkproj <directory>` is called, the command presents three Yes/No prompts:
  1) Activate `<directory>` as a Python virtual environment? y/n
  2) Initialize `<directory>` as a local git repository? y/n
  3) Set up `<directory>` as a remote repository on GitHub? y/n
