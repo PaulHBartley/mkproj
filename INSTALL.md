@@ -16,7 +16,7 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+, Git, and
 - Python venv module  
 - Git
 - A GitHub account with
-   - a Personal Access Token
+   - a [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
    - a [Template Repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-template-repository)
 - Curl
 
