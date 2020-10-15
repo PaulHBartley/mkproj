@@ -1,5 +1,6 @@
 # mkproj
 
+## Overview
 This is a family of simple bash scripts to aid in the setup of a Python project.
 
 The family consists of three callable functions:
@@ -49,6 +50,11 @@ When `$ mkproj my-new-python-project` finishes, we will have
    - a remote repository on GitHub ""
    - a set of starter items for our project ""  
    
+## Operation  
+
+
+
+
 ### For more information:  
 Please see [INSTALL.md](https://github.com/PaulHBartley/mkproj/blob/main/INSTALL.md) for how to install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`.
 
