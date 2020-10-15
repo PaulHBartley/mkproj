@@ -15,6 +15,9 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+, Git, and
 - Python 3.5+ (tested with Python 3.8.5)
 - Python venv module  
 - Git
+- A GitHub account with
+   - a Personal Access Token
+   - a Template Repository
 - Curl
 
 ## Bash environment variables needed for connecting to the GitHub API:
