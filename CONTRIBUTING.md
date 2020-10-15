@@ -8,7 +8,7 @@
   
   Here is a list of ideas for future development:
   1) Add additional "child" functions for setting up projects in other languages (beyond Python).
-  2) Redo the input scheme to make it less cumbersome to extend.
+  2) Redo the input scheme to make it less cumbersome to maintain or extend.
   3) Figure out a way of storing configuration parameters that would apply to all languages.
   4) Make these scripts more portable/less bash-centric?
   
