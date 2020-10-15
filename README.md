@@ -106,8 +106,10 @@ without connecting to the GitHub API.
 - `$ mkrepo [-r] <directory>` -- makes `<directory>` (new or existing) a git repository inside the current working directory.  
 - `$ mkrepo [-r] <path>/<directory>` -- makes `<directory>` (new or existing) a git repository inside the path directory.  
 - `$ mkrepo [-r]` -- makes the current working directory into a git repository.  
+<end>  </end>  
+  <br>  
   
-### For more information:  
+## For more information:  
 Please see [INSTALL.md](https://github.com/PaulHBartley/mkproj/blob/main/INSTALL.md) for how to install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`.
 
 
