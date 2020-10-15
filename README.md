@@ -50,7 +50,7 @@ With `$ mkproj my-new-python-project` we can also
   <br>  
   
 #### Result: a Python project folder ready for use.
-When `$ mkproj my-new-python-project` finishes, we will have a local folder called `my-new-python-project` with  
+When `$ mkproj my-new-python-project` finishes, we will have a local folder with  
    - an activated Python virtual environment (if we so choose)
    - an initalized local Git repository ""
    - a remote repository on GitHub ""
