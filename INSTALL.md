@@ -17,7 +17,7 @@ They should work in other bash 5.0+ environments (assuming Python 3.5+, Git, and
 - Git
 - Curl
 
-## Bash environment variables needed for connecting to GitHub:
+## Bash environment variables needed for connecting to the GitHub API:
 (define these in the `~/.bashrc` file)
 - GITHUB_USERNAME
 - GITHUB_TOKEN
