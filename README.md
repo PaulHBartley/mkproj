@@ -13,7 +13,7 @@ The parent function, `$ mkproj`, acts as a "main" function and relies on its two
 <br>  
 Let's look at what this trio of functions can do together.
 <br>  
-#### Goal: Make a Python project folder.  
+### Goal: Make a Python project folder.  
 What do we need inside this folder?  
 - A Python virtual environment  
 - A local Git repository  
@@ -28,7 +28,7 @@ We can call `$ mkproj my-new-python-project` to
 - connect the local repository to a remote repository on GitHub 
   
 This is a good start. But we can do more.
-#### Real Goal: Make a Python project folder useful.
+### Real Goal: Make a Python project folder useful.
 
 
 With `$ mkproj my-new-python-project` we can also
@@ -42,7 +42,7 @@ With `$ mkproj my-new-python-project` we can also
    - whatever else!
 - sync the local `my-new-python-project` repo with its remote counterpart on GitHub, thus making these useful items automatically appear in our local project folder
 
-#### Result: a Python project folder we can use.
+### Result: a Python project folder we can use.
 When `$ mkproj my-new-python-project` finishes, we will have  
 - a local folder called `my-new-python-project` with
    - an activated Python virtual environment (if we so choose)
