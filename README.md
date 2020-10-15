@@ -28,7 +28,7 @@ We can call `$ mkproj my-new-python-project` to
 - connect the local repository to a remote repository on GitHub 
   
 This is a good start. But we can do more.  
-  
+  <br>
 #### Real Goal: Make a Python project folder useful.
 
 
