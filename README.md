@@ -78,7 +78,8 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
 `$ mkvenv [-a] <path>/<directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the path destination directory.  
 `$ mkvenv [-a]` -- makes the current working directory into a Python environment folder.  
   
-  <br>
+  <br>  
+  
  ## `$ mkrepo` Operation
 - `$ mkrepo -r <directory>`  
    - Calling `$ mkrepo -r <directory>` sends a call to the GitHub API to create a new remote repository (called
