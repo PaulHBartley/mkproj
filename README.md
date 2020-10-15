@@ -63,6 +63,8 @@ When `$ mkproj my-new-python-project` finishes, we will have
  `$ mkproj <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.  
  `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the path destination directory.  
  `$ mkproj` -- makes the current working directory into a Python project folder.  
+   
+   <br>
  
  ## `$ mkvenv` Operation
 `$ mkvenv -a <directory>`
