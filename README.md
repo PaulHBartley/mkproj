@@ -24,7 +24,7 @@ What do we need inside this folder?
 Fine.  
   
 We can call `$ mkproj my-new-python-project` to  
-- create a new directory called `my-new-python-project`
+- create a new directory named `my-new-python-project`
 - install a Python virtual environment inside the directory
 - initialize the directory as a Git repository
 - connect the local repository to a remote repository on GitHub 
