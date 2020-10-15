@@ -77,8 +77,22 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
 `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the current working directory.  
 `$ mkvenv [-a] <path>/<directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the path destination directory.  
 `$ mkvenv [-a]` -- makes the current working directory into a Python environment folder.  
+  
+  <br>
+## `$ mkrepo` Operation
+- `$ mkrepo -r <directory>`
+   - Calling `$ mkrepo -r <directory>` sends a call to the GitHub API to create a new remote repository (called
+`<directory>`) from a pre-defined template. The script then git-initializes a new or existing local
+`<directory>` and links it with the newly-created remote repository.
 
+- `$ mkrepo <directory>` 
+   - Calling `$ mkrepo <directory>` simply initializes `<directory>` (new or existing) as a local git repository
+without connecting to the GitHub API.
 
+#### Directory Behavior
+`$ mkrepo [-r] <directory>` -- makes `<directory>` (new or existing) a git repository inside the current working directory.
+`$ mkrepo [-r] <path>/<directory>` -- makes `<directory>` (new or existing) a git repository inside the path destination directory.
+`$ mkrepo [-r]` -- makes the current working directory into a git repository.
 
 ### For more information:  
 Please see [INSTALL.md](https://github.com/PaulHBartley/mkproj/blob/main/INSTALL.md) for how to install `$ mkproj`, `$ mkvenv`, and `$ mkrepo`.
