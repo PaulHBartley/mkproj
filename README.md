@@ -62,10 +62,10 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
 #### Directory Behavior  
 - `$ mkproj <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.  
 - `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the path directory.  
-- `$ mkproj` -- makes the current working directory into a Python project folder.<br>
+- `$ mkproj` -- makes the current working directory into a Python project folder.  
   
- 
- ## `$ mkvenv` Operation
+  
+## `$ mkvenv` Operation
 `$ mkvenv -a <directory>`  
   
 - Calling `$ mkvenv -a <directory>` installs a `.venv` folder inside `<directory>` and calls `$ source` to run a script named `activate` inside the `.venv` folder. Running the `activate` script sets `<directory>` as the active Python virtual environment for that shell session. The `activate` script places `(<directory>) $` to the left of the command line prompt (as shown), signaling that all Python calls made when `<directory>` is active will be routed to the Python interpreter in `/<path>/<directory>/.venv`. To return the Python environment to the system-wide Python install, type `$ deactivate`.
@@ -80,7 +80,7 @@ Calling `$ mkproj <directory>` passes `<directory>` to the `$ mkvenv` and `$ mkr
 - `$ mkvenv [-a]` -- makes the current working directory into a Python environment folder.  
     
   
- ## `$ mkrepo` Operation
+## `$ mkrepo` Operation
 `$ mkrepo -r <directory>`  
   
 - Calling `$ mkrepo -r <directory>` sends a call to the GitHub API to create a new remote repository (called
