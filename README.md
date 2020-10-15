@@ -15,7 +15,7 @@ Let's look at what this trio of functions can do together.
 ### Goal: Make a Python project folder.  
 What do we need inside this folder?  
 - A Python virtual environment  
-- A local git repository  
+- A local Git repository  
 - A remote repository connected with the local repository 
 
 Fine.
@@ -23,7 +23,7 @@ Fine.
 We can call `$ mkproj my-new-python-project` to  
 - create a new directory called `my-new-python-project`
 - install a Python virtual environment inside the directory
-- initialize the directory as a git repository
+- initialize the directory as a Git repository
 - connect the local repository to a remote repository on GitHub 
   
 This is a good start. But we can do more.
@@ -45,7 +45,7 @@ With `$ mkproj my-new-python-project` we can also
 When `$ mkproj my-new-python-project` finishes, we will have  
 - a local folder called `my-new-python-project` with
    - an activated Python virtual environment (if we so choose)
-   - an initalized local git repository ""
+   - an initalized local Git repository ""
    - a remote repository on GitHub ""
    - a set of starter items for our project ""  
    
