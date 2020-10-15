@@ -9,7 +9,7 @@
   
 ## Compatibility
 The functions have been tested in **GNU bash, version 5.0.17** on **Ubuntu 20.04**.
-They should work in other bash 5.0+ environments (assuming Python 3.5+ is installed).
+They should work in other bash 5.0+ environments (assuming Python 3.5+ and Git are installed).
 
 ## Dependencies  
 - Python 3.5+ (tested with Python 3.8.5)
