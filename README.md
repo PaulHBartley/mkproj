@@ -64,11 +64,11 @@ When `$ mkproj my-new-python-project` finishes, we will have
  `$ mkproj` -- makes the current working directory into a Python project folder.  
  
  ## `$ mkvenv` Operation
+`$ mkvenv -a <directory>`
 Calling `$ mkvenv -a <directory>` installs a `.venv` folder inside `<directory>` and calls `$ source` to run a script named `activate` inside the `.venv` folder. Running the `activate` script sets `<directory>` as the active Python virtual environment for that shell session. The `activate` script places `(<directory>) $` to the left of the command line prompt (as shown), signaling that all Python calls made when `<directory>` is active will be routed to the Python interpreter in `/<path>/<directory>/.venv`. To return the Python environment to the system-wide Python install, type `$ deactivate`.
 
-`$ mkvenv <directory>` simply installs a `.venv` folder inside `<directory>` without activating `<directory>` as the Python virtual environment.
-
-For the script to work, python3.8 (or later) and the venv module need to be installed.
+`$ mkvenv <directory>`
+Calling `$ mkvenv <directory>` simply installs a `.venv` folder inside `<directory>` without activating `<directory>` as the Python virtual environment.
 
 ### Directory Behavior
 `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the current working directory.
