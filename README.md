@@ -49,6 +49,7 @@ When `$ mkproj my-new-python-project` finishes, we will have
    - an initalized local Git repository ""
    - a remote repository on GitHub ""
    - a set of starter items for our project ""  
+   
 <end>  </end>  
   <br>
 ## `$ mkproj` Operation  
