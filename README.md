@@ -98,7 +98,7 @@ When `$ mkproj my-new-python-project` finishes, we will have a local folder with
   
 `$ mkrepo <directory>`  
 
-- Calling `$ mkrepo <directory>` simply initializes `<directory>` (new or existing) as a local git repository
+- Calling `$ mkrepo <directory>` simply initializes `<directory>` (new or existing) as a local Git repository
 without connecting to the GitHub API.  
   
 #### Directory Behavior  
