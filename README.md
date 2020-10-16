@@ -70,7 +70,7 @@ When `$ mkproj my-new-python-project` finishes, we will have a local folder with
   
 #### Directory Behavior  
 - `$ mkproj <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.  
-- `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the path directory.  
+- `$ mkproj <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the `<path>` destination directory.  
 - `$ mkproj` -- makes the current working directory into a Python project folder.  
 <end>  </end>  
   <br>
@@ -85,7 +85,7 @@ When `$ mkproj my-new-python-project` finishes, we will have a local folder with
   
 #### Directory Behavior  
 - `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the current working directory.  
-- `$ mkvenv [-a] <path>/<directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the path directory.  
+- `$ mkvenv [-a] <path>/<directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the `<path>` destination directory.  
 - `$ mkvenv [-a]` -- makes the current working directory into a Python environment folder.  
 <end>  </end>  
   <br>
@@ -103,7 +103,7 @@ without connecting to the GitHub API.
   
 #### Directory Behavior  
 - `$ mkrepo [-r] <directory>` -- makes `<directory>` (new or existing) a Git repository inside the current working directory.  
-- `$ mkrepo [-r] <path>/<directory>` -- makes `<directory>` (new or existing) a Git repository inside the path directory.  
+- `$ mkrepo [-r] <path>/<directory>` -- makes `<directory>` (new or existing) a Git repository inside the `<path>` destination directory.  
 - `$ mkrepo [-r]` -- makes the current working directory into a Git repository.  
 <end>  </end>  
   <br>  
