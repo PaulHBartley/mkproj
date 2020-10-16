@@ -26,7 +26,7 @@ function mkrepo() {
 # $ mkrepo [-r] <directory> -- makes <directory> (new or existing) a Git repository inside the
 # current working directory.
 # $ mkrepo [-r] <path>/<directory> -- makes <directory> (new or existing) a Git repository inside
-# the path destination directory.
+# the <path> destination directory.
 # $ mkrepo [-r] -- makes the current working directory into a Git repository.
 #
 ###################################################################################################
