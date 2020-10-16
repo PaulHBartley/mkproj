@@ -16,7 +16,7 @@ Let's look at what this trio of functions can do together.
   <br>  
   
 #### Goal: Make a Python project folder.  
-What do we need to get started with this folder?  
+What do we need to make this folder useable?  
 - A Python virtual environment  
 - A local Git repository  
 - A remote repository connected with the local repository  
