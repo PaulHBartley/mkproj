@@ -9,12 +9,12 @@ function mkvenv() {
 #
 # OPERATION
 # $ mkvenv -a <directory> installs a .venv folder inside <directory>. It then calls $ source to
-# run a script named activate found inside the .venv folder that was just created. Running the
-# activate script sets <directory> as the active Python virtual environment for that shell
-# session. The activate script places "(<directory>) $" to the left of the command line prompt
-# (as shown), signaling that all Python calls made with <directory> as the active environment
-# will be routed to the Python interpreter in /<path>/<directory>/.venv. To return the Python
-# environment to the system-wide Python install, type $ deactivate.
+# run a script named "activate" found in the newly installed .venv folder. Running the "activate"
+# script sets <directory> as the active Python virtual environment for that shell session. The
+# "activate" script places "(<directory>) $" to the left of the command line prompt (as shown),
+# signaling that all Python calls made with <directory> as the active environment will be routed
+# to the Python interpreter in /<path>/<directory>/.venv. To return the Python environment to the
+# system-wide Python install, type $ deactivate.
 #
 # $ mkvenv <directory> simply installs a .venv folder inside <directory> without activating
 # <directory> as the Python virtual environment.
