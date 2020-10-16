@@ -10,6 +10,7 @@
   1) Add additional "child" functions for setting up projects in other languages (beyond Python).
   2) Redo the input scheme to make it less cumbersome to maintain or extend.
   3) Figure out a way of storing configuration parameters that would apply to all languages.
-  4) Make these scripts more portable/less bash-centric?
+  4) Add the capability to switch between templates from a list of different [template repositories](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-template-repository).
+  5) Make these scripts more portable/less bash-centric?
   
   Feel free to get in touch with any questions/comments!
