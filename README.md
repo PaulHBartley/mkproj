@@ -77,11 +77,11 @@ When `$ mkproj my-new-python-project` finishes, we will have a local folder with
 ## `$ mkvenv` Operation
 `$ mkvenv -a <directory>`  
   
-- Calling `$ mkvenv -a <directory>` installs a `.venv` folder inside `<directory>`. It then taps `$ source` to run a script named `activate` found in the `.venv` folder that was just created. Running the `activate` script sets `<directory>` as the active Python virtual environment for that shell session. Accordingly, the `activate` script places `(<directory>) $` to the left of the command line prompt (as shown), signaling that all Python calls made with `<directory>` as the active environment will be routed to the Python interpreter in `/<path>/<directory>/.venv`. To return the Python environment to the system-wide Python install, type `$ deactivate`.
+- Calling `$ mkvenv -a <directory>` installs a new `.venv` folder inside `<directory>`. The `.venv` folder contains the Python resources needed to support `<directory>` as a Python virtual environment. The call then taps `$ source` to run a script named `activate` found in the newly-installed `.venv` folder. Running the `activate` script sets `<directory>` as the active Python virtual environment for that shell session. In turn, the `activate` script places `(<directory>) $` to the left of the command line prompt (as shown), signaling that all Python calls made under that environment will be routed to the Python interpreter in `/<path>/<directory>/.venv`. To return the Python environment to the system-wide Python install, type `$ deactivate`.
 
 `$ mkvenv <directory>`  
 
-- Calling `$ mkvenv <directory>` simply installs a `.venv` folder inside `<directory>` without activating `<directory>` as the Python virtual environment.
+- Calling `$ mkvenv <directory>` simply installs a `.venv` folder inside `<directory>` (new or existing) without activating `<directory>` as the Python virtual environment.
   
 #### Directory Behavior  
 - `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the current working directory.  
