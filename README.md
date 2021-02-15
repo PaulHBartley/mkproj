@@ -84,9 +84,9 @@ When `$ mkproj my-new-python-project` finishes, we will have a local folder with
 - Calling `$ mkvenv <directory>` simply installs a `.venv` folder inside `<directory>` (new or existing) without activating `<directory>` as the Python virtual environment.
   
 #### Directory Behavior  
-- `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the current working directory.  
-- `$ mkvenv [-a] <path>/<directory>` -- makes `<directory>` (new or existing) a Python environment folder inside the `<path>` destination directory.  
-- `$ mkvenv [-a]` -- makes the current working directory into a Python environment folder.  
+- `$ mkvenv [-a] <directory>` -- makes `<directory>` (new or existing) a Python project folder inside the current working directory.  
+- `$ mkvenv [-a] <path>/<directory>` -- makes `<directory>` (new or existing) a Python project folder inside the `<path>` destination directory.  
+- `$ mkvenv [-a]` -- makes the current working directory into a Python project folder.  
 <end>  </end>  
   <br>
 ## `$ mkrepo` Operation
