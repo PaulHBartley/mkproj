@@ -23,11 +23,11 @@ function mkrepo() {
 # GITHUB_TEMPLATE_REPO
 #
 # DIRECTORY BEHAVIOR
-# $ mkrepo [-r] <directory> -- makes <directory> (new or existing) a Git repository inside the
+# $ mkrepo [-r] <directory> -- makes <directory> (new or existing) the root of a Git repository inside the
 # current working directory.
-# $ mkrepo [-r] <path>/<directory> -- makes <directory> (new or existing) a Git repository inside
+# $ mkrepo [-r] <path>/<directory> -- makes <directory> (new or existing) the root of a Git repository inside
 # the <path> destination directory.
-# $ mkrepo [-r] -- makes the current working directory into a Git repository.
+# $ mkrepo [-r] -- makes the current working directory the root of a Git repository.
 #
 ###################################################################################################
 
