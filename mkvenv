@@ -22,11 +22,11 @@ function mkvenv() {
 # For the script to work, python3.8 (or later) and the venv module need to be installed.
 #
 # DIRECTORY BEHAVIOR
-# $ mkvenv [-a] <directory> -- makes <directory> (new or existing) a Python environment folder
+# $ mkvenv [-a] <directory> -- makes <directory> (new or existing) a Python project folder
 # inside the current working directory.
-# $ mkvenv [-a] <path>/<directory> -- makes <directory> (new or existing) a Python environment
+# $ mkvenv [-a] <path>/<directory> -- makes <directory> (new or existing) a Python project
 # folder inside the <path> destination directory.
-# $ mkvenv [-a] -- makes the current working directory into a Python environment folder.
+# $ mkvenv [-a] -- makes the current working directory into a Python project folder.
 #
 #################################################################################################
 
