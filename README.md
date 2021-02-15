@@ -26,7 +26,7 @@ Fine.
 We can call `$ mkproj my-new-python-project` to  
 - create a new directory named `my-new-python-project`
 - install a Python virtual environment inside the directory
-- initialize the directory as a Git repository
+- initialize the directory as the root of a Git repository
 - connect the local repository to a remote repository on GitHub 
   
 This is a good start. But we can do more.  
@@ -98,13 +98,13 @@ When `$ mkproj my-new-python-project` finishes, we will have a local folder with
   
 `$ mkrepo <directory>`  
 
-- Calling `$ mkrepo <directory>` simply initializes `<directory>` (new or existing) as a local Git repository
+- Calling `$ mkrepo <directory>` simply initializes `<directory>` (new or existing) as the root of a local Git repository
 without connecting to the GitHub API.  
   
 #### Directory Behavior  
-- `$ mkrepo [-r] <directory>` -- makes `<directory>` (new or existing) a Git repository inside the current working directory.  
-- `$ mkrepo [-r] <path>/<directory>` -- makes `<directory>` (new or existing) a Git repository inside the `<path>` destination directory.  
-- `$ mkrepo [-r]` -- makes the current working directory into a Git repository.  
+- `$ mkrepo [-r] <directory>` -- makes `<directory>` (new or existing) the root of a Git repository inside the current working directory.  
+- `$ mkrepo [-r] <path>/<directory>` -- makes `<directory>` (new or existing) the root of a Git repository inside the `<path>` destination directory.  
+- `$ mkrepo [-r]` -- makes the current working directory the root of a Git repository.  
 <end>  </end>  
   <br>  
   
