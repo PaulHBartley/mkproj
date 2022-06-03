@@ -18,7 +18,7 @@ Let's look at what this trio of functions can do together.
 #### Goal: Make a Python project folder.  
 What would we like to give this folder?  
 - A Python virtual environment  
-- A local Git repository  
+- A Git repository  
 - A remote repository connected with the local repository  
   
 Fine.  
