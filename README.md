@@ -1,7 +1,7 @@
 # mkproj
 
 ## Overview
-This is a family of simple shell commands to aid in the setup of a Python project folder.
+This is a family of simple shell commands to aid in setting up a Python project folder.
 
 The family consists of three callable functions:
 
