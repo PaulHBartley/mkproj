@@ -1,6 +1,6 @@
 # Installing mkproj  
 
-**mkproj** is a family of three bash functions installed as three executable files.
+**mkproj** is a family of three Bash functions installed as three executable files.
 
 ## Files to be installed  
 `$ mkproj` <-- parent function  
@@ -8,8 +8,8 @@
 `$ mkrepo` <-- child function #2  
   
 ## Compatibility
-The functions have been tested in **GNU bash, version 5.0.17** on **Ubuntu 20.04**.
-They should work in other bash 5.0+ environments (assuming Python 3.5+, Git, and Curl are installed).
+The functions have been tested in **GNU Bash, version 5.0.17** on **Ubuntu 20.04**.
+They should work in other Bash 5.0+ environments (assuming Python 3.5+, Git, and Curl are installed).
 
 ## Dependencies  
 - Python 3.5+ (tested with Python 3.8.5)
