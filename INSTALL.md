@@ -1,6 +1,6 @@
 # Installing mkproj  
 
-**mkproj** is a family of three Bash functions installed as three executable files.
+**mkproj** is a family of three Bash functions.
 
 ## Files to be installed  
 `$ mkproj` <-- parent function  
@@ -32,17 +32,11 @@ They should work in other Bash 5.0+ environments (assuming Python 3.5+, Git, and
 
 2) Clone the **mkproj** repo from your GitHub account to your local drive.
 
-3) Use `$ chmod +x mkproj mkvenv mkrepo` to make the files executable.
-
-4) Copy the three files into a local directory included in the PATH environment variable (where the shell looks for executables).
-   - If it doesn't already exist, you could create a `~/bin` directory and place the **mkproj** files in `~/bin`.  
-   - If you do create a `~/bin` directory, make sure to add `/home/<username>/bin` to the PATH variable.  
-      - Any local `<directory>` can be appended to the PATH variable by adding this line to the `~/.bashrc` file:  
-         - `export PATH="$PATH:/home/<username>/<directory>"`. 
+3) Copy the `mkproj`, `mkvenv`, and `mkrepo` files into a `~/<directory>` of your choice.
    
-5) Add the following to the `~/.bashrc` file:
+4) Add the following to the `~/.bashrc` file:
    - `source ~/<directory>/mkproj`
    - `source ~/<directory>/mkvenv`
    - `source ~/<directory>/mkrepo`
 
-6) You will have to restart the shell for the changes to take effect. 
+5) You will have to restart the shell or run `$ source ~/.bashrc` for the functions to take effect. 
