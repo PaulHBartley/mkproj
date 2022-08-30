@@ -2,7 +2,7 @@ function mkvenv() {
 
 #################################################################################################
 # OVERVIEW
-# This function calls the $ python venv module to create a Python virtual environment, with the
+# This function calls the $ python venv module to create a Python virtual environment with the
 # option to activate the environment directly after the environment is created.
 #
 # OPERATION
