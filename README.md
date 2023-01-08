@@ -1,7 +1,7 @@
 # mkproj
 
 ## Overview
-This is a family of simple shell commands to aid in setting up a Python project folder.
+This is a family of simple shell commands for setting up a Python project folder.
 
 The family consists of three callable functions:
 
@@ -9,7 +9,7 @@ The family consists of three callable functions:
 `$ mkvenv`  <-- child #1  
 `$ mkrepo`  <-- child #2  
  <br>  
-The parent function, `$ mkproj`, relies on its two child functions to operate. The child functions are set up to work independently. How convenient.
+The parent function, `$ mkproj`, relies on its two child functions to operate. The child functions are set up to work independently. 
 <br>  
 Let's look at what this trio of functions can do together.  
   
